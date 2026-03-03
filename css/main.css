@@ -1,0 +1,850 @@
+@charset "UTF-8";
+/************ default_setting *********/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@font-face {
+  font-family: "GamtanRoadBatang";
+  src: url("/font/GamtanRoadBatang-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GamtanRoadBatang";
+  src: url("/font/GamtanRoadBatang-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Pretendard";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  height: 100vh;
+}
+
+/*********header**********/
+.header_outer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid #4B4652;
+  z-index: 999;
+}
+.header_outer .logo_box {
+  width: 80px;
+  height: 37px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 30px;
+  transition: background-color 0.5s ease;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.header_gnb {
+  display: flex;
+  font-weight: 400;
+  gap: 10px;
+}
+.header_gnb a {
+  color: white;
+}
+.header_gnb li {
+  width: 115px;
+  text-align: center;
+}
+.header_gnb li:hover a {
+  color: #FF9ADA;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.header.is_dark {
+  background-color: #000000;
+}
+
+/*********sub_menu*********/
+.sub_menu_area {
+  position: absolute;
+  left: 0;
+  top: 61px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 100%;
+  height: 220px;
+  z-index: 9999;
+  display: none;
+  padding-right: 30px;
+}
+
+.sub_menu_area.is-open {
+  display: block;
+}
+
+.sub_menu_area.is-dark {
+  background-color: #000000;
+}
+
+.sub_menu_box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.sub_menu_box ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.sub_menu_box ul li {
+  width: 115px;
+  height: 34px;
+}
+.sub_menu_box ul li a {
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.sub_menu_box ul li:hover a {
+  color: #FF9ADA;
+  font-weight: bold;
+}
+
+/*********main_section**********/
+.main_img_box img,
+.meta_year,
+#main_section .sub_title,
+#main_section .main_info {
+  opacity: 0;
+}
+
+.main_img_box img {
+  scale: 1.2;
+}
+
+.main_section {
+  position: relative;
+}
+
+.main_img_box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main_img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  display: block;
+}
+
+.main_txt_box {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 998;
+}
+.main_txt_box .meta_year {
+  color: #FF9ADA;
+  font-size: 28px;
+  font-weight: bold;
+}
+.main_txt_box .sub_title {
+  margin-top: -12px;
+  font-size: 61px;
+  color: #C4AFD3;
+  line-height: 68px;
+}
+.main_txt_box .sub_title b {
+  color: white;
+}
+.main_txt_box .main_info {
+  font-family: "pretendard";
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: -50px;
+}
+
+.main_txt_box p {
+  font-family: "GamtanRoadBatang", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*********진주의 8야**********/
+.night_08_all {
+  padding: 120px 200px;
+}
+.night_08_all .night_info_box {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.night_08_all .night_info_box .info_img_box {
+  flex: 0 0 25%;
+  flex-shrink: 0;
+  flex-basis: 25%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.night_08_all .night_info_box .info_img_box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.night_08_all .night_info_box .info_img_box .dim_text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 11;
+  font-size: 22px;
+  font-family: "GamtanRoadBatang", serif;
+}
+.night_08_all .night_info_box .info_img_box:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.4);
+}
+.night_08_all .night_info_box .info_img_box:hover .dim_text {
+  opacity: 1;
+}
+.night_08_all .vb2 {
+  display: none;
+}
+.night_08_all #full_page section {
+  width: 100%;
+  height: 100vh;
+}
+
+/*********진주의 8야**********/
+#night_08 .night_08_area > * {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+#night_08 {
+  height: 100vh;
+  background-image: url(../images/night_8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.night_08_area {
+  padding: 120px 200px;
+  position: relative;
+}
+.night_08_area button {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  font-size: 28px;
+  color: #B8A7C4;
+  background: none;
+  border: none;
+}
+
+.prev {
+  position: absolute;
+  top: 55%;
+  left: 100px;
+}
+
+.next {
+  position: absolute;
+  top: 55%;
+  right: 100px;
+}
+
+.fp-tableCell {
+  vertical-align: top !important;
+}
+
+#night_08,
+#night_08 .fp-tableCell {
+  overflow: visible !important;
+}
+
+#night_08 .txt_box {
+  font-family: "GamtanRoadBatang", serif;
+}
+
+.meta {
+  font-size: 22px;
+  color: #FF9ADA;
+  font-weight: 500;
+}
+
+.sub_title {
+  margin-top: -20px;
+  font-size: 61px;
+  color: #C4AFD3;
+}
+.sub_title b {
+  color: #fff;
+}
+
+.line_img {
+  margin-top: -50px;
+}
+
+.bt {
+  margin-top: -10px;
+}
+
+#night_08 .night_info_box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 110px;
+}
+#night_08 .night_info_box .info_txt_box .info_title {
+  font-family: "GamtanRoadBatang", serif;
+  font-size: 40px;
+  color: #C4AFD3;
+}
+#night_08 .night_info_box .info_txt_box .info_title b {
+  color: white;
+}
+#night_08 .night_info_box .info_txt_box .info_hash {
+  font-size: 18px;
+  color: #C4AFD3;
+  margin-top: -30px;
+}
+#night_08 .night_info_box .info_txt_box .info {
+  font-size: 18px;
+  color: white;
+  line-height: 22px;
+}
+#night_08 .night_info_box button.detail {
+  width: 204px;
+  height: 50px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+#night_08 .night_info_box button.detail:hover {
+  color: black;
+}
+#night_08 .night_info_box button.detail:hover::before {
+  transform: scaleX(1);
+}
+#night_08 .night_info_box button.detail::before {
+  content: "";
+  width: 204px;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s ease;
+  z-index: -1;
+}
+
+/*********진주의 밤을 기억하다**********/
+#memory {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/memory_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.memory_area .txt_box {
+  font-family: "GamtanRoadBatang", serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.memory_area .txt_box .meta {
+  margin-bottom: 30px;
+}
+.memory_area .txt_box .info {
+  font-size: 18px;
+  font-family: "pretendard";
+  line-height: 26px;
+  color: white;
+  font-weight: 300;
+  margin-top: -30px;
+}
+.memory_area .txt_box button.detail {
+  width: 204px;
+  height: 50px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.memory_area .txt_box button.detail:hover {
+  color: black;
+}
+.memory_area .txt_box button.detail:hover::before {
+  transform: scaleX(1);
+}
+.memory_area .txt_box button.detail::before {
+  content: "";
+  width: 204px;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s ease;
+  z-index: -1;
+}
+
+.swiper {
+  width: 380px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  transform: rotateZ("0deg");
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*********진주의밤을 거닐다**********/
+.notice_area {
+  padding: 100px 200px;
+}
+.notice_area .txt_box {
+  font-family: "GamtanRoadBatang", serif;
+}
+.notice_area .txt_box .meta {
+  font-size: 22px;
+  font-weight: 600;
+  color: #D72495;
+}
+.notice_area .txt_box .sub_title {
+  margin-top: 8px;
+  color: #444444;
+}
+.notice_area .txt_box .sub_title b {
+  color: #000000;
+}
+.notice_area .txt_box .info {
+  font-family: "pretendard";
+  margin-top: -46px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.notice_info_frame {
+  margin-top: 46px;
+  height: 524px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.notice_card_box {
+  flex-basis: 60%;
+  flex-shrink: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.notice_card_box .img_box {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 524px;
+}
+.notice_card_box .img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notice_card_box .notice_card {
+  flex-grow: 1;
+  cursor: pointer;
+  flex-basis: 20%;
+  position: relative;
+  transition: all 0.8s;
+}
+.notice_card_box .notice_card:hover {
+  flex-grow: 2;
+}
+.notice_card_box .notice_card:hover .img_box img {
+  filter: brightness(0.5);
+}
+.notice_card_box .notice_card .notice_info_box {
+  width: 100%;
+  padding-inline: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.notice_card_box .notice_card .notice_info_box.is_hover {
+  opacity: 1;
+}
+.notice_card_box .notice_card .notice_info_box .info_txt_box p {
+  font-size: 18px;
+  color: #cacaca;
+  line-height: 22px;
+  font-weight: 300;
+}
+.notice_card_box .info_btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -38px;
+}
+.notice_card_box .info_btn_box .info_title {
+  font-size: 33px;
+  color: white;
+}
+.notice_card_box .info_btn_box .more {
+  width: 86px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notice_box {
+  flex-basis: 40%;
+}
+
+.notice_title_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+.notice_title_box .notice_title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.notice_title_box .detail {
+  font-size: 18px;
+  color: #717171;
+}
+
+.notice_card_frame .notice_card {
+  height: 148px;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.notice_card_frame .notice_card .card_title {
+  max-width: 530px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  margin-bottom: -8px;
+  font-weight: 600;
+  color: #444;
+}
+.notice_card_frame .notice_card .card_info {
+  max-width: 530px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+.notice_card_frame .notice_card .card_meta {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+.notice_card_frame .notice_card:hover {
+  background-color: #E7F1FA;
+  transition: all 0.5s;
+}
+
+.nv {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: opacity, transform;
+}
+
+.show.nv {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notice_card.cd1.show {
+  transition-delay: 0.25s;
+}
+
+.notice_card.cd2.show {
+  transition-delay: 0.5s;
+}
+
+.notice_box.show {
+  transition-delay: 0.35s;
+}
+
+/*********진주의밤을 기록하다**********/
+#record {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/record_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.record_area {
+  padding: 100px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.record_area .txt_box {
+  font-family: "GamtanRoadBatang", serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.record_area .txt_box button.detail {
+  width: 204px;
+  height: 50px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.record_area .txt_box button.detail:hover {
+  color: black;
+}
+.record_area .txt_box button.detail:hover::before {
+  transform: scaleX(1);
+}
+.record_area .txt_box button.detail::before {
+  content: "";
+  width: 204px;
+  height: 50px;
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s ease;
+  z-index: -1;
+}
+.record_area .txt_box .meta {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FF9ADA;
+}
+.record_area .txt_box .sub_title {
+  margin-top: 8px;
+  color: #C4AFD3;
+}
+.record_area .txt_box .sub_title b {
+  color: #ffffff;
+}
+.record_area .txt_box .info {
+  font-family: "pretendard";
+  margin-top: -46px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+
+#record .flow-wrap {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -80px;
+}
+#record .swiper {
+  width: 100%;
+  height: 231px;
+  padding: 12px 0;
+}
+#record .swiper-slide {
+  width: 345px !important;
+  /* 카드 크기 */
+  height: 210px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+#record .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+#record .flow-top .swiper-wrapper,
+#record .flow-bottom .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+#record .flow-top {
+  margin-bottom: -6px !important;
+}
+
+/*********footer*********/
+.footer_outer {
+  background-color: #000000;
+  padding-bottom: 60px;
+}
+
+.footer_area {
+  width: 1270px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.footer_menu_box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_menu_box ul {
+  border-right: 1px solid #636363;
+  text-align: center;
+  padding-right: 30px;
+}
+.footer_menu_box ul:last-child {
+  border-right: none;
+}
+.footer_menu_box li {
+  width: 180px;
+  text-align: center;
+  height: 30px;
+}
+.footer_menu_box li a {
+  color: #999;
+}
+.footer_menu_box .menu_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer_info_area {
+  margin-top: 30px;
+  border-top: 1px solid #424242;
+}
+
+.footer_info_box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_info_box p {
+  color: white;
+}
+
+.footer_info {
+  display: flex;
+  gap: 20px;
+}
+
+.family_site .family {
+  width: 140px;
+  height: 34px;
+  padding-left: 10px;
+}
+
+.copy {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

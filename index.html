@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진주 국가유산 야행</title>
+  <!--favicon-->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- JS 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- 내 JS (전부 defer) -->
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/full_page.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/mainClick.js"></script>
+
+
+</head>
+
+<body>
+  <header class="header_outer">
+    <div class="header">
+      <div class="logo_box">
+        <img src="./images/logo.png" alt="로고">
+      </div>
+      <ul class="header_gnb">
+        <li><a href="#!">진주국가유산야행</a></li>
+        <li><a href="#!">국가유산</a></li>
+        <li><a href="#!">프로그램</a></li>
+        <li><a href="#!">행사장</a></li>
+        <li><a href="#!">커뮤니티</a></li>
+      </ul>
+    </div>
+
+    <div class="sub_menu_area">
+      <div class="sub_menu_box">
+        <ul>
+          <li><a href="#!">행사개요</a></li>
+          <li><a href="#!">야행스토리</a></li>
+          <li><a href="#!">찾아오시는길</a></li>
+        </ul><!--진주국가유산야행-->
+        <ul>
+          <li><a href="#!">국가유산</a></li>
+          <li><a href="#!">무형유산</a></li>
+          <li><a href="#!">국립진주박물관</a></li>
+        </ul><!--대상국가유산-->
+        <ul>
+          <li><a href="#!">진주8야(夜)</a></li>
+          <li><a href="#!">동반행사</a></li>
+        </ul><!--프로그램-->
+        <ul>
+          <li><a href="#!">행사장 안내도</a></li>
+          <li><a href="#!">행사장 안내책자</a></li>
+          <li><a href="#!">행사공연 시간안내</a></li>
+        </ul><!--행사장-->
+        <ul>
+          <li><a href="#!">공지사항</a></li>
+          <li><a href="#!">보도자료</a></li>
+          <li><a href="#!">자주묻는질문</a></li>
+          <li><a href="#!">갤러리</a></li>
+        </ul><!--커뮤니티-->
+      </div>
+    </div>
+  </header><!--header-->
+
+  <div id="fullpage">
+    <section id="main_section" class="section">
+      <div class="main_txt_box">
+        <p class="meta_year">2025</p>
+        <p class="sub_title">화력조선,<br>
+          <b>진주성 총통</b>의 기억
+        </p>
+        <p class="main_info">2025.08.29(금) ~ 08.31(일) 18:00 ~ 22:00 | <b>진주성 일원</b></p>
+      </div>
+      <div class="main_img_box">
+        <img src="./images/main_bg.png" alt="메인이미지">
+      </div>
+    </section><!--메인섹션-->
+
+    <section id="night_08" class="section">
+      <div class="night_08_all">
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_img_box">
+            <img src="./images/nightarea_01.png" alt="야경">
+            <p class="dim_text">야경(夜景)</p>
+          </div><!--야경-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_02.png" alt="야경2">
+            <p class="dim_text">야로(夜路)</p>
+          </div><!--야로-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_03.png" alt="야경2">
+            <p class="dim_text">야사(夜史)</p>
+          </div><!--야사-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_04.png" alt="야화">
+            <p class="dim_text">야화(夜畵)</p>
+          </div><!--야화-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_05.png" alt="야경">
+            <p class="dim_text">야설(夜說)</p>
+          </div><!--야설-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_06.png" alt="야경2">
+            <p class="dim_text">야식(夜食)</p>
+          </div><!--야식-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_07.png" alt="야경2">
+            <p class="dim_text">야시(夜市)</p>
+          </div><!--야시-->
+          <div class="info_img_box">
+            <img src="./images/nightarea_08.png" alt="야경2">
+            <p class="dim_text">야숙(夜宿)</p>
+
+          </div><!--야숙-->
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+
+      </div><!---8야 전체보기-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야경</b>(夜景)
+            </p>
+            <p class="info_hash">
+              #전쟁터로 간 민초 #김시민호
+            </p>
+            <p class="info">
+              진주성 경관 조성, 8야를 상징하는 8개의 달 <br>
+              진주의 명물 실크를 활용하여 거점과 거점을 잇는 자연스러운 동선 연출,<br>
+              김시민호를 즐겨보세요.
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_01.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야경-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야로</b>(夜路)
+            </p>
+            <p class="info_hash">
+              #진주성도를 따라서 #화력조선 #야간임무
+            </p>
+            <p class="info">
+              진주성도를 따라, 화력(火力)조선, <br>
+              야간임무를 즐겨보세요.
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_02.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야로-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야사</b>(夜史)
+            </p>
+            <p class="info_hash">
+              #나의 조선이름이요? #진주성 ‘어린이 수성군’ #홀로그램
+            </p>
+            <p class="info">
+              문화유산 연계 만들기 체험, <br>
+              진주대접 체험을 즐겨보세요
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_03.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야사-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야화</b>(夜畵)
+            </p>
+            <p class="info_hash">
+              #화력(火力)조선 #포토존 #진주성
+            </p>
+            <p class="info">
+              이색 포토존, 국립진주박물관, <br>
+              진주역사 상영 LED를 즐겨보세요
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_04.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야화-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야설</b>(夜說)
+            </p>
+            <p class="info_hash">
+              #무형유산 #성안 저잣거리의 놀이판 #역사강연
+            </p>
+            <p class="info">
+              진주무형유산 공연 및 시연<br>
+              역사재현 퍼포먼스를 즐겨보세요
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_05.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야설-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야식</b>(夜食)
+            </p>
+            <p class="info_hash">
+              #올빰야시장 #브루어링 #야시장
+            </p>
+            <p class="info">
+              진주 논개시장에서 열리는<br>
+              특별한 경험, 올빰야시장!
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_06.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야식-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야시</b>(夜市)
+            </p>
+            <p class="info_hash">
+              #성안저작거리 #플리마켓 #먹거리
+            </p>
+            <p class="info">
+              진주성 야외공연장에서만 열리는<br>
+              저잣거리를 즐겨보세요
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_07.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야시-->
+
+      <div class="night_08_area vb2">
+        <button type="button" class="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button><!--이전-->
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의, <b>8야(夜)</b></p>
+        </div>
+        <div class="line_img">
+          <img src="./images/line_up.png" alt="">
+        </div><!--라인 위-->
+        <div class="night_info_box">
+          <div class="info_txt_box">
+            <p class="info_title">
+              <b>야숙</b>(夜宿)
+            </p>
+            <p class="info_hash">
+              #진주에서 #하룻밤
+            </p>
+            <p class="info">
+              진주성 외성에 위치한<br>
+              숙소에서 하룻밤 어때요?
+            </p>
+            <button type="button" class="detail">
+              진주의 8야(夜) 전체보기
+            </button>
+          </div><!--인포텍스트박스-->
+          <div class="info_img_box">
+            <img src="./images/night_08.png" alt="야경">
+          </div>
+        </div><!--8야정보박스-->
+        <div class="line_img bt">
+          <img src="./images/line_bt.png" alt="">
+        </div><!--라인아래-->
+        <button type="button" class="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button><!--다음-->
+      </div><!---야숙-->
+
+    </section><!--진주의 8야-->
+
+    <section id="memory" class="section">
+      <div class="memory_area">
+        <div class="txt_box">
+          <p class="meta">
+            진주국가유산야행
+          </p>
+          <p class="sub_title">진주의 밤을, <b>기억하다</b></p>
+          <p class="info">
+            8야(夜)와 국가유산야행에서 관광일기를 기록하는 문화탐방! <br>
+            진주의 밤을 즐기는 사람들의 빛나는 추억이 담긴 갤러리를 감상해보세요.
+          </p>
+          <button type="button" class="detail">
+            갤러리 바로가기
+          </button>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/memory_01.png" alt="기억01"></div>
+            <div class="swiper-slide">
+              <img src="./images/memory_02.png" alt="기억02">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/memory_03.png" alt="기억03">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/memory_04.png" alt="기억04">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/memory_05.png" alt="기억05">
+            </div>
+            <div class="swiper-slide"> <img src="./images/memory_06.png" alt="기억06">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/memory_07.png" alt="기억07">
+            </div>
+            <div class="swiper-slide"><img src="./images/memory_08.png" alt="기억08"></div>
+            <div class="swiper-slide">
+              <img src="./images/memory_09.png" alt="기억09">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/memory_10.png" alt="기억10">
+            </div>
+          </div>
+        </div>
+      </div><!--memory_area-->
+    </section><!--진주를 기억하다-->
+
+    <section id="notice" class="section">
+      <div class="notice_area">
+        <div class="txt_box">
+          <p class="meta">
+            진주의 밤을 즐기는 8가지 방법
+          </p>
+          <p class="sub_title">진주의 밤을, <b>거닐다</b></p>
+          <p class="info">참여 국가유산과 안내책자를 살펴보고, 진주의 빛나는 밤을 거닐어보세요!</p>
+        </div>
+        <div class="notice_info_frame">
+          <div class="notice_card_box nv">
+            <div class="notice_card cd1">
+              <div class="img_box">
+                <img src="./images/notice_01.png" alt="공지사항1">
+              </div>
+              <div class="notice_info_box">
+                <div class="info_txt_box">
+                  <p>진주국가유산여행,<br>
+                    국가유산참여현황을 확인하세요!
+                  </p>
+                </div>
+                <div class="info_btn_box">
+                  <p class="info_title">참여국가유산</p>
+                  <button class="more" type="button">
+                    <img src="./images/chevron.png" alt="화살표">
+                  </button>
+                </div>
+              </div>
+            </div><!--행사정보카드-->
+            <div class="notice_card cd2">
+              <div class="img_box">
+                <img src="./images/notice_02.png" alt="공지사항1">
+              </div>
+              <div class="notice_info_box">
+                <div class="info_txt_box">
+                  <p>진주국가유산야행<br>
+                    행사정보를 확인하세요!
+                  </p>
+                </div>
+                <div class="info_btn_box">
+                  <p class="info_title">행사장 안내</p>
+                  <button class="more" type="button">
+                    <img src="./images/chevron.png" alt="화살표">
+                  </button>
+                </div>
+              </div>
+            </div><!--행사정보카드-->
+          </div><!--행사정보카드박스-->
+          <div class="notice_box nv">
+            <div class="notice_title_box">
+              <p class="notice_title">공지사항</p>
+              <p class="detail">더보기+</p>
+            </div>
+            <div class="notice_card_frame">
+              <div class="notice_card">
+                <a href="#!">
+                  <p class="card_title">2025 진주 국가유산여행 어린이 기자단 모집</p>
+                  <p class="card_info">
+                    2025 진주 국가유산여행 어린이 기자단을 모집합니다. 어린이 여러분들의 많은 지원 기다립니다.
+                  </p>
+                  <p class="card_meta">
+                    2025.08.31
+                  </p>
+                </a>
+              </div><!--공지사항1-->
+              <div class="notice_card">
+                <a href="#!">
+                  <p class="card_title">진주시, 야간관광으로 여름경제 살린다.</p>
+                  <p class="card_info">
+                    진주성 미디어아트 8월 15일개막으로 국가유산 야행 3일간 연계 운영합니다.
+                  </p>
+                  <p class="card_meta">
+                    2025.08.31
+                  </p>
+                </a>
+              </div><!--공지사항2-->
+              <div class="notice_card">
+                <a href="#!">
+                  <p class="card_title">진주시, 여름밤 밝힌다… 진주성 미디어파사드·야행 등 ‘다채’</p>
+                  <p class="card_info">
+                    ‘국가유산 미디어아트 진주성’과 ‘진주 국가유산 야행’등을 연이어 개최합니다.
+                  </p>
+                  <p class="card_meta">
+                    2025.08.31
+                  </p>
+                </a>
+              </div><!--공지사항3-->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!--진주의 밤을 거닐다-->
+
+    <section id="record" class="section">
+      <div class="record_area">
+        <div class="txt_box">
+          <p class="meta">
+            진주국가유산야행
+          </p>
+          <p class="sub_title">진주의 밤을, <b>기록하다</b></p>
+          <p class="info">
+            내가 만드는 국가유산야행이야기, 진주의 밤을 기록해보세요. <br>
+            @jjnight를 태그해서 게시물을 올려주세요! SNS추첨을 통해 하모 MD를 증정합니다.
+          </p>
+          <button type="button" class="detail">
+            공식 SNS 바로가기
+          </button>
+        </div><!--텍스트-->
+      </div><!--record_area-->
+      <div class="flow-wrap">
+        <!-- 위쪽 -->
+        <div class="swiper flow-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/record_01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_02.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_03.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_04.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_05.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_06.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_07.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_08.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_09.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_10.png" alt="">
+            </div>
+
+          </div>
+        </div>
+        <!-- 아래쪽 -->
+        <div class="swiper flow-bottom">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/record_11.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_12.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_13.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_14.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_15.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_16.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_17.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_08.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_09.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/record_10.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--flow_wrap-->
+    </section><!--진주의 밤을 기록하다-->
+  </div><!--full_page-->
+
+  <footer class="footer_outer">
+    <div class="footer_area">
+      <div class="footer_menu_box">
+        <ul>
+          <li class="menu_title">진주국가유산야행</li>
+          <li><a href="#!">행사개요</a></li>
+          <li><a href="#!">야행스토리</a></li>
+          <li><a href="#!">찾아오시는길</a></li>
+        </ul><!--진주국가유산야행-->
+        <ul>
+          <li class="menu_title">국가유산</li>
+          <li><a href="#!">국가유산</a></li>
+          <li><a href="#!">무형유산</a></li>
+          <li><a href="#!">국립진주박물관</a></li>
+        </ul><!--대상국가유산-->
+        <ul>
+          <li class="menu_title">프로그램</li>
+          <li><a href="#!">진주8야(夜)</a></li>
+          <li><a href="#!">동반행사</a></li>
+        </ul><!--프로그램-->
+        <ul>
+          <li class="menu_title">행사장</li>
+          <li><a href="#!">행사장 안내도</a></li>
+          <li><a href="#!">행사장 안내책자</a></li>
+          <li><a href="#!">행사공연 시간안내</a></li>
+        </ul><!--행사장-->
+        <ul>
+          <li class="menu_title">커뮤니티</li>
+          <li><a href="#!">공지사항</a></li>
+          <li><a href="#!">보도자료</a></li>
+          <li><a href="#!">자주묻는질문</a></li>
+          <li><a href="#!">갤러리</a></li>
+        </ul><!--커뮤니티-->
+      </div>
+      <div class="footer_info_area">
+        <div class="footer_info_box">
+          <div class="footer_info">
+            <p>경상남도 진주시 망경남길 30(망경동) 진주국가유산여행 추진단</p>
+            <p>E-mail:jjnight@jjct.or.kr</p>
+            <p>사무국:055)795-3200 FAX:055)795-3221</p>
+          </div>
+          <div class="family_site">
+            <select class="family">
+              <option selected>관련 사이트</option>
+              <option>국립 진주박물관</option>
+              <option>진주시청</option>
+            </select>
+          </div>
+        </div>
+        <p class="copy">&copy;2025진주국가유산야행.All Right Reserved</p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+</body>
+
+</html>
