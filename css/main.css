@@ -56,11 +56,13 @@ section {
   right: 0;
   width: 100%;
   border-bottom: 1px solid #4B4652;
-  z-index: 999;
 }
 .header_outer .logo_box {
   width: 80px;
   height: 37px;
+}
+.header_outer {
+  z-index: 999;
 }
 
 .header {
@@ -74,7 +76,7 @@ section {
   position: relative;
 }
 
-.header_gnb {
+.header_gnb ul {
   display: flex;
   font-weight: 400;
   gap: 10px;
@@ -103,8 +105,7 @@ section {
   top: 61px;
   right: 0;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   width: 100%;
   height: 220px;
   z-index: 9999;
@@ -693,7 +694,6 @@ section {
 .record_area .txt_box {
   font-family: "GamtanRoadBatang", serif;
   text-align: center;
-  margin-bottom: 10px;
 }
 .record_area .txt_box button.detail {
   width: 204px;
@@ -727,6 +727,9 @@ section {
   transform-origin: left;
   transition: transform 0.9s ease;
   z-index: -1;
+}
+.record_area .txt_box {
+  margin-bottom: 10px;
 }
 .record_area .txt_box .meta {
   font-size: 22px;
@@ -826,12 +829,14 @@ section {
 
 .footer_info_box {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .footer_info_box p {
   color: white;
+}
+.footer_info_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer_info {

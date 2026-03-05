@@ -110,10 +110,12 @@ section {
   right: 0;
   width: 100%;
   border-bottom: 1px solid #4B4652;
+
   .logo_box {
     width: 80px;
     height: 37px;
   }
+
   z-index: 999;
 }
 
@@ -129,9 +131,11 @@ section {
 }
 
 .header_gnb {
-  display: flex;
-  font-weight: 400;
-  gap: 10px;
+  ul {
+    display: flex;
+    font-weight: 400;
+    gap: 10px;
+  }
 
   a {
     color: white;
@@ -140,6 +144,7 @@ section {
   li {
     width: 115px;
     text-align: center;
+
     &:hover {
       a {
         color: #FF9ADA;
@@ -172,7 +177,8 @@ section {
 .sub_menu_area.is-open {
   display: block;
 }
-.sub_menu_area.is-dark{
+
+.sub_menu_area.is-dark {
   background-color: #000000;
 }
 
@@ -264,7 +270,7 @@ section {
     }
   }
 
-  .main_info{
+  .main_info {
     font-family: 'pretendard';
     font-size: 18px;
     font-weight: 300;
@@ -822,67 +828,78 @@ section {
 }
 
 /*********footer*********/
-.footer_outer{
+.footer_outer {
   background-color: #000000;
   padding-bottom: 60px;
 }
 
-.footer_area{
+.footer_area {
   width: 1270px;
   margin: 0 auto;
   padding-top: 30px;
 }
 
-.footer_menu_box{
+.footer_menu_box {
   display: flex;
   justify-content: space-between;
-  ul{
+
+  ul {
     border-right: 1px solid #636363;
     text-align: center;
     padding-right: 30px;
-    &:last-child{
+
+    &:last-child {
       border-right: none;
     }
   }
-  li{
+
+  li {
     width: 180px;
     text-align: center;
     height: 30px;
-    a{
+
+    a {
       color: #999;
     }
   }
-  .menu_title{
+
+  .menu_title {
     font-size: 18px;
     font-weight: 600;
     color: white;
   }
 }
 
-.footer_info_area{
+.footer_info_area {
   margin-top: 30px;
   border-top: 1px solid #424242;
 }
-.footer_info_box{
+
+.footer_info_box {
   margin-top: 30px;
-  p{
+
+  p {
     color: white;
   }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer_info{
+
+.footer_info {
   display: flex;
   gap: 20px;
 }
-.family_site{
-  .family{
+
+.family_site {
+  .family {
     width: 140px;
     height: 34px;
     padding-left: 10px;
   }
 }
-.copy{
+
+.copy {
   color: white;
 }

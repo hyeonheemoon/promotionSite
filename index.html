@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <!-- JS 라이브러리 -->
@@ -31,18 +31,22 @@
   <header class="header_outer">
     <div class="header">
       <div class="logo_box">
-        <img src="./images/logo.png" alt="로고">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="진주국가유산야행">
+        </a>
       </div>
-      <ul class="header_gnb">
-        <li><a href="#!">진주국가유산야행</a></li>
-        <li><a href="#!">국가유산</a></li>
-        <li><a href="#!">프로그램</a></li>
-        <li><a href="#!">행사장</a></li>
-        <li><a href="#!">커뮤니티</a></li>
-      </ul>
+      <nav class="header_gnb" aria-label="주메뉴">
+        <ul>
+          <li><a href="#!">진주국가유산야행</a></li>
+          <li><a href="#!">국가유산</a></li>
+          <li><a href="#!">프로그램</a></li>
+          <li><a href="#!">행사장</a></li>
+          <li><a href="#!">커뮤니티</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="sub_menu_area">
+    <nav class="sub_menu_area" aria-label="서브메뉴">
       <div class="sub_menu_box">
         <ul>
           <li><a href="#!">행사개요</a></li>
@@ -70,10 +74,10 @@
           <li><a href="#!">갤러리</a></li>
         </ul><!--커뮤니티-->
       </div>
-    </div>
+    </nav>
   </header><!--header-->
 
-  <div id="fullpage">
+  <main id="fullpage">
     <section id="main_section" class="section">
       <div class="main_txt_box">
         <p class="meta_year">2025</p>
@@ -134,14 +138,14 @@
           </div><!--야숙-->
         </div><!--8야정보박스-->
         <div class="line_img bt">
-          <img src="./images/line_bt.png" alt="">
+          <img src="./images/line_bt.png" alt="구분선">
         </div><!--라인아래-->
 
       </div><!---8야 전체보기-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -176,14 +180,14 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
+        <button type="button" class="next" aria-label="다음">
           <i class="fa-solid fa-chevron-right"></i>
         </button><!--다음-->
       </div><!---야경-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -215,16 +219,16 @@
           </div>
         </div><!--8야정보박스-->
         <div class="line_img bt">
-          <img src="./images/line_bt.png" alt="">
+          <img src="./images/line_bt.png" alt="구분선">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야로-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -256,16 +260,16 @@
           </div>
         </div><!--8야정보박스-->
         <div class="line_img bt">
-          <img src="./images/line_bt.png" alt="">
+          <img src="./images/line_bt.png" alt="구분선">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야사-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -299,14 +303,14 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야화-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -340,14 +344,14 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야설-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -381,14 +385,14 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야식-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -422,14 +426,14 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야시-->
 
       <div class="night_08_area vb2">
-        <button type="button" class="prev">
-          <i class="fa-solid fa-chevron-left"></i>
+        <button type="button" class="prev" aria-label="이전">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
         </button><!--이전-->
         <div class="txt_box">
           <p class="meta">
@@ -463,8 +467,8 @@
         <div class="line_img bt">
           <img src="./images/line_bt.png" alt="">
         </div><!--라인아래-->
-        <button type="button" class="next">
-          <i class="fa-solid fa-chevron-right"></i>
+        <button type="button" class="next" aria-label="다음">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
         </button><!--다음-->
       </div><!---야숙-->
 
@@ -702,7 +706,7 @@
         </div>
       </div><!--flow_wrap-->
     </section><!--진주의 밤을 기록하다-->
-  </div><!--full_page-->
+  </main><!--full_page-->
 
   <footer class="footer_outer">
     <div class="footer_area">
